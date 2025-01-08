@@ -1,0 +1,492 @@
+/* body start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(167, 234, 167); 
+   }
+   /* body end */
+   /* top, social & language part start */
+   .top{
+       display: flex;
+       justify-content: end;
+       margin-right: 100px;
+       margin-top: 10px;
+   }
+   .social{
+       margin: 20  px 10px;
+   }
+   a i {
+       width: 35px;
+       color: wheat;
+       background: blue;
+       display: inline-block;
+       text-transform: uppercase;
+       text-align: center;
+       text-decoration: none;
+       border-radius: 5px;
+       padding: 4px;
+       margin: -1px;
+   }
+   .en{
+       width: 50px;
+       height: 25px;
+       margin-left: 5px;  
+       border: none;
+       background-color: brown;
+   }
+   .en a {
+       width: 50px;
+       color: black;
+       border-radius: 0px;
+       text-decoration: none;
+       background-color: brown;
+   }
+   .bn {
+       width: 50px;
+       height: 23px;
+       margin-left: -5px;
+       background-color: gray;
+       border: none;
+   }
+   .bn a {
+       width: 50px;
+       background-color:gray;
+       color: black;
+       border-radius: 0px;
+       height: 23px;
+       text-decoration: none;  
+   }
+   @media (max-width: 600px) {
+       .top {
+           margin-right: 50px;
+           width: 350px;
+           }
+   }
+   /* top, social & language part end */
+   
+   /* logo, theme & donate start */
+   .logo{
+       display:flex;
+       }
+   .logo img{
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       margin-left: 100px;
+       }
+   .theme{
+       text-align:center;
+       line-height: 30px;
+       margin-top: 20px;
+       }
+   .next_page {
+           text-decoration: none;
+           display: flex;
+           position: absolute;
+           right: 0;
+           top: 100px;
+           padding: 05px;
+           margin-right: 40px;
+           color: white;
+           background-color: brown;
+           border-radius: 15px;
+      }
+   .islam{
+       text-shadow: 08px 08px 05px green;
+   }
+       .lifeone{
+           display: inline-block;
+           width: fit-content;
+           font-size: 30px;
+           font-weight: bold;
+           margin-top: 5px;
+           color: rgb(58, 15, 145);
+           animation: lifeone 15s ease-in-out 2s infinite;
+       }
+       .lifetwo{
+           display: inline-block;
+           width: fit-content;
+           font-size: 30px;
+           font-weight: bold;
+           margin-top: 5px;
+           color: rgba(76, 185, 13, 1);
+       }
+   
+       @keyframes lifeone{
+           50%{transform: rotateY(260deg);}
+       }
+       .article{
+           display: block;
+       }
+   .myAc{
+       position: absolute;
+       right: 110px;
+       margin-top: 20px;
+       border-radius: 30px;
+       }
+   .myAc a{
+       width: 150px;
+       height: 40px;
+       background-color: purple;
+       padding: 10px;
+       margin-left: 10px;
+       margin-top: 20px;
+       color: wheat;
+       text-decoration: none;
+       border-radius: 10px;
+       }
+   
+       /* media start */
+       @media (max-width: 600px) {
+           .logo {
+               display: inline-block;
+               width: 350px;
+               }
+           .theme{
+                   width: 144px;
+                   margin-left: 25px;
+                   margin-top: 20px;
+                   display: inline-block;
+                   }
+           .logo img {
+               width: 100px;
+               margin-left: 25px;
+               display: inline-block;
+               margin-right: 5px;
+               }
+           h1  {
+               line-height: 40px;
+               }
+           .logo .myAc{
+               margin: 45px;
+               }
+           .myAc{
+               margin-top: -20px;
+           }
+           .myAc a{
+               display: inline;
+               }
+       }
+       /* media end */
+   /* logo, theme & donate end */
+   
+   /* manu bar start */
+   .Bar{
+       background-color: brown;
+       width: 100%;
+       height:50px;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+       color: wheat;
+       font-size: 22px;
+   }
+   .Bar a {
+       width: fit-content;
+       text-decoration: none;
+       background-color: brown;
+       color: orange;
+       text-align: center;
+       margin-left: 4px;
+       padding-right: 20px;
+       border-right: solid 3px black;
+       }
+   .Bar a:hover{
+       color: black;
+       transition: color 1s ease-in;
+       transform: scale(1.3);
+   }
+   @media (max-width: 600px) {
+       .Bar{
+           margin-top: 80px;
+           font-size: 12px;
+           width: 350px;
+       }
+       .Bar a {
+           width: fit-content;
+       }
+   }
+   /* manu bar end */
+   marquee{
+       background-color: white;
+       color: black;
+       font-weight: bolder;
+       font-size: 20px;
+   }
+   /* left aside for donate start */
+   .donate_one{
+       float: left;
+       width: 215px;
+       margin-top: -260px;
+       height: 386px;
+       padding: 10px;
+       background-color: rgb(81, 42, 165);
+   }
+   .donate_one p{
+       text-align: center;
+       color: rgb(0, 255, 64);
+       font-size: 32px;
+       background-color: rgb(81, 42, 165);
+       width: 215px;
+       height: 386px;
+       animation:Donate_one 30s infinite 2s;
+       margin-left: -10px;
+       margin-top:-10px ;
+   }
+   @keyframes Donate_one {
+       0% {background-color: wheat; color: black;}
+       20% {background-color: black; color: wheat;}
+       40% {background-color: green; color: blue;}
+       60%{ background-color: blue; color: green;}
+       80%{ background-color: yellow; color: black;}
+       100%{ background-color: orange; color: brown;}
+       
+   }
+   @media (max-width: 600px) {
+       .donate_one{
+        display: none;
+       }
+       .donate_one p{
+           display: none;
+       }
+   }
+   /* left aside for donate end */
+   /* right aside for donate start */
+   .donate_two{
+       float: right;
+       width: 215px;
+       margin-top: -260px;
+       height: 386px;
+       padding: 10px;
+       background-color: rgb(81, 42, 165);
+   }
+   .donate_two p{
+       text-align: justify;
+       padding: 10px;
+       font-size: 22px;
+       width: 215px;
+       height: 386px;
+       margin-left:-10px;
+       margin-top:-10px;
+       background-color: rgb(81, 42, 165);
+       color: wheat;
+   }
+   @media (max-width: 600px) {
+       .donate_two{
+           display: none;
+       }
+       .donate_one{
+           display: none;
+       }
+   }
+   /* right aside for donate end */
+   /* description with image start */
+   .main{
+       width: 65%;
+       height: 100%;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       margin: 0 auto;
+   }
+   p{
+       font-size: 20px;
+       text-indent: 30px;
+       font-style: italic;
+       color: green;
+   }
+   .pone{
+       font-size: 20px;
+       text-indent: 30px;
+       text-align: right;
+       color: blue;
+       font-style: italic;
+   }
+   @media (max-width: 600px) {
+       .main{
+           width: 350px;
+           margin: 0 auto;
+       }
+       .main p{
+           text-align: justify;
+           font-size: 15px;
+           text-indent: 0px;
+           display: flex;
+           padding: 10px;
+           width:175px ;
+       }
+       .main .pone{
+           text-align: justify;
+           font-size: 15px;
+           text-indent: 0px;
+           display: flex;
+           padding: 10px;
+           width: 175px;
+       }
+       .main img{
+           display: none;
+       }
+   }
+   /* description with image end */
+   
+   /* make free web site start */
+   .AAside{
+       margin: 0 auto;
+       width: 900px;
+       height: 100px;
+       font-weight: bold;
+       text-align: center;
+       background-color: rgb(165, 42, 42);
+   }
+   h3{
+       font-size: 20px;
+       background-color: rgb(165, 42, 42);
+   }
+   .Webfree{
+       color: black;
+       background-color: rgba(0, 103, 167, 0.3);
+       font-style: normal;
+       width: 900px;
+       text-align: center;
+       animation: freweb 4s ease-out 2s infinite;
+   }
+   .Amail h3{
+       display: inline-block;
+       width: 297px;
+       background-color: rgba(0, 103, 167, 0.3);
+   }
+   @keyframes freweb {
+       0%{transform: scale(.80); border-radius: 100%;}
+       100%{transform: scale(1); border-radius: 0%;} 
+   }
+   @media (max-width: 600px) {
+       .AAside{
+           width: 350px;
+           font-size: 30px;
+       } 
+       .AAside .Webfree{
+           width: 290px;
+           margin-left: 30px;
+           color: wheat;
+       }
+       h3{
+           font-size: 20px;
+       }
+       .AAside .Amail h3{
+           display:inline-block;
+       }
+   }
+   /* make free web site  end */
+   /* description part start */
+   .description{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       height: fit-content;
+       border: 2px solid black;
+       text-align: center;
+   }
+   .description .Desc_one h1{
+       text-shadow: -2px 8px 5px blue;
+       text-align: left; 
+       font-size: 27px;
+   }
+   .description .Desc_one h1 i{
+       padding-left: 20px;
+   }
+   .description .Desc_one{
+       border: 1px black solid;
+       margin: 0px;
+       width: 430px;
+   }
+   .description .Desc_one ol{
+       margin-left:40px;
+       list-style-type: disc;
+       text-align: left;
+       font-size: 25px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: bolder;
+       font-family: 'Courier New', Courier, monospace;
+   }
+   .Desc_one a{
+       border-radius: 10px;
+       text-decoration: none;
+       font-size: 20px;
+       border: 1px dotted black;
+       padding: 5px;
+       background-color: lightgrey;
+       line-height: 35px;
+   }
+   iframe{
+       width: 390px;
+       height: 236px;
+   }
+   @media (max-width: 600px) {
+       .description{
+           grid-template-columns: repeat(1, 1fr);
+           margin-top: 235px;
+           width: 350px;
+           border: none;
+       }
+       .description .Desc_one{
+           border: none;
+           width: 350px;
+           padding-left: 10px;
+       }
+       .description .Desc_one ol{
+       text-align: left;
+       width: 350px ;
+       margin-left: 5px;
+       }
+       .none{
+        margin-left:-50px;
+       }
+       iframe{
+           width: 350px;
+           height: 236px;
+       }
+   }
+       /* media end */
+   /* description part end */
+   /* footer part codeing start */
+   .footer{
+       width: 100%;
+       height: 100px;
+       background-color: orange;
+       display: flex;
+   }
+   .V_mobile{
+       width: 450px;
+       height: 100px;
+       background-color: rgb(121, 82, 8);
+       font-weight: bold;
+       font-size: 20px;
+       text-shadow: 5px 5px 4px black;
+       text-align: justify;
+       line-height: 30px;
+       padding-top: 10px;
+       margin: 0 auto;
+       color: wheat;
+       padding: 10px;
+   }
+   .npage_down{
+       text-decoration: none;
+       display: flex;
+       position: absolute;
+       right: 0;
+       padding: 05px;
+       margin-right: 40px;
+       margin-top: 55px;
+       color: white;
+       background-color: brown;
+       border-radius: 15px; 
+   }
+   
+   /* last media start */
+   @media (max-width: 600px) {
+       .next_page{margin-top: 100px;}
+       .npage_down{margin-top: 105px;}
+       .V_mobile{font-size: 16px; }
+       .footer{width: 350px;}
+   }
+   /* footer part codeing end */
